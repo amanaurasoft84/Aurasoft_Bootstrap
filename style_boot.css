@@ -1,3 +1,8 @@
+body {
+    overflow-x: hidden;
+}
+
+
 /* ---------------topbar----------- */
 .twitter_line {
     width: 5px;
@@ -315,7 +320,6 @@
 }
 
 /* ----------OUR PORTFOLIO----------- */
-
 .deve_work {
     position: absolute;
 }
@@ -323,7 +327,6 @@
 .card-body {
     background-color: #50d8af;
     width: 100%;
-    /* text-align: center; */
     color: #fff;
     bottom: -100px;
     transition: all ease-in-out 0.3s;
@@ -331,7 +334,7 @@
 
 #cards {
     padding: 100px !important;
-    height: 100%;
+    height: auto;
     overflow: hidden;
     display: flex;
 }
@@ -352,17 +355,19 @@
     align-items: center;
 }
 
-/* .Line{
-    flex-direction: column !important;
-} */
-
 .card {
     position: relative;
     transition: 0.6s;
-    height: 270px;
+    /* height: 300px; */
+    width: 32%;
     overflow: hidden !important;
     border-radius: none !important;
     border: none !important;
+}
+
+.My_card {
+    height: 280px !important;
+    margin: 15px 0px;
 }
 
 .card:hover .card-body {
@@ -410,16 +415,12 @@
     position: absolute !important;
 }
 
-
-
 /* --------TESTIMONIALS--------- */
-
-
 .box_box {
     background-color: white !important;
     box-sizing: content-box;
     padding: 30px 30px 0px 30px;
-    margin: 30px 15px;
+    /* margin: 30px 15px; */
     text-align: center;
     height: 350px;
     width: 270px;
@@ -452,8 +453,6 @@
     position: relative !important;
     flex-shrink: 0 !important;
     transition-property: transform !important;
-    /* width: 100%; */
-    /* height: 100%; */
 }
 
 
@@ -480,30 +479,31 @@
 
 /* -----------Call-to-action-------  */
 .Call-to-action {
-    padding: 40px 0px;
     background-color: #081e5b;
     background-size: cover;
-    height: 190px;
+    margin-top: 50px;
+}
+
+.action {
+   padding: auto;
 }
 
 .Call-to-action h3 {
     color: #fff;
     font-size: 28px;
     font-weight: 700;
-    width: auto;
 }
 
 .rwo_call {
     display: flex;
     flex-wrap: wrap;
+    padding: 30px !important;
 
 }
 
 .rwo_call p {
     color: #ffff;
     font-size: 16px;
-    margin-top: 10px;
-
 }
 
 .Call-to-action .cta-btn-container {
@@ -534,12 +534,6 @@
 #our_team {
     padding: 30px;
 }
-
-/* .team_card {
-    display: flex !important;
-    justify-content: center;
-  
-} */
 
 .card_p {
     padding: 20px;
@@ -575,7 +569,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 20px; */
     border-left: 1px solid #ddd;
 
 }
@@ -609,15 +602,15 @@
 }
 
 #text_name {
-    width: 50%;
+    width: 49%;
 }
 
 #text_email {
-    width: 48%;
+    width: 49%;
 }
 
 .form_box {
-    display: block;
+    /* display: block; */
     width: 100%;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
@@ -626,7 +619,7 @@
     color: #212529;
     background-color: #fff;
     border: 1px solid #ced4da;
-    margin: 10px 10px;
+    margin: 10px 0px;
 }
 
 .sub_btn {
@@ -668,10 +661,43 @@
 
     }
 
+    .My_card {
+        height: 180px !important;
+    }
+
+    #cards {
+        height: auto;
+        padding: 20px !important;
+    }
+
+    .respo {
+        width: 100% !important;
+
+    }
+
+    .card-body {
+        width: 100% !important;
+    }
+
     .contact_add,
     .contact_phon,
     .contact_emaIL {
         flex-direction: column !important;
         border: none !important;
+    }
+
+    .rwo_call {
+        padding: none !important;
+    }
+
+    /* .Call-to-action {
+        height: 280px;
+        width: auto;
+    } */
+}
+
+@media screen and (max-width: 1000px) {
+    .My_card {
+        height: 185px !important;
     }
 }
